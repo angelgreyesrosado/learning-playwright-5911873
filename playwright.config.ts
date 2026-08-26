@@ -49,6 +49,7 @@ export default defineConfig({
       name: "chromium",
       dependencies: ["setup"],
       use: { ...devices["Desktop Chrome"], permissions: ["clipboard-read"] },
+      testMatch: /.*\.spec\.ts/,
     },
     // {
     //   name: 'firefox',
