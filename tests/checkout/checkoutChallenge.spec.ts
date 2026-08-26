@@ -24,6 +24,7 @@ test.describe("Checkout challenge", async () => {
     await page.getByTestId("city").fill("Sacramento");
     await page.getByTestId("state").fill("California");
 
+    await page.getByTestId("proceed-3").isEnabled;
     await page.getByTestId("proceed-3").click();
     await expect(page.getByTestId("finish")).toBeDisabled();
     await page.getByTestId("payment-method").selectOption("Buy Now Pay Later");
